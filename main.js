@@ -24,7 +24,7 @@
   $("#hero-title").classList.add("in");
 
   $("#about-text").innerHTML = D.about.map(p => `<p>${esc(p)}</p>`).join("");
-  $("#stats").innerHTML = D.stats.map(s => `<div class="stat"><b>${esc(s.value)}</b><span class="mono dim">${esc(s.label)}</span></div>`).join("");
+  $("#stats").innerHTML = (D.age ? [{ value: D.age, label: "Years old" }, ...D.stats] : D.stats).map(s => `<div class="stat"><b>${esc(s.value)}</b><span class="mono dim">${esc(s.label)}</span></div>`).join("");
   $("#skills").innerHTML = Object.entries(D.skills).map(([k, v]) =>
     `<div><h3 class="mono dim">${esc(k)}</h3><div class="chips">${v.map(x => `<span class="chip">${esc(x)}</span>`).join("")}</div></div>`).join("");
 
