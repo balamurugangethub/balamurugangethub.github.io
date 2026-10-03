@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balamurugan — B.Tech Student & Developer</title>
+<meta name="description" content="Portfolio of Balamurugan: projects, experience and contact.">
+<meta name="theme-color" content="#08090b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2307090b'/%3E%3Cpath d='M9 22V10h7a4 4 0 010 8h-4' stroke='%239fb6ee' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="field" aria-hidden="true"></canvas>
+<div class="progress" aria-hidden="true"></div>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#top" class="brand" id="brand">B<span>.</span></a>
+  <nav aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="kbd-btn" id="open-palette" aria-label="Open command menu">
+    <span>Menu</span><kbd>Ctrl</kbd><kbd>K</kbd>
+  </button>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="meta-row reveal">
+      <span class="badge" id="badge"><i></i><span>Open to internships</span></span>
+      <span class="mono dim" id="clock"></span>
+    </div>
+    <h1 class="reveal" id="hero-title"></h1>
+    <p class="lead reveal" id="tagline"></p>
+    <div class="cta reveal">
+      <a class="btn primary" href="#work">View projects <b>→</b></a>
+      <a class="btn" id="resume" href="resume.pdf" download>Download résumé</a>
+    </div>
+    <div class="scroll-hint mono dim reveal">scroll <span></span></div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="label mono reveal">01 / About</div>
+    <div class="about-grid">
+      <div class="about-text reveal" id="about-text"></div>
+      <div class="stats reveal" id="stats"></div>
+    </div>
+    <div class="skills reveal" id="skills"></div>
+  </section>
+
+  <section id="work" class="section">
+    <div class="label mono reveal">02 / Selected work</div>
+    <div class="filters reveal" id="filters" role="tablist" aria-label="Filter projects"></div>
+    <div class="grid" id="projects"></div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="label mono reveal">03 / Experience</div>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="label mono reveal">04 / Contact</div>
+    <h2 class="reveal">Let's work<br>together.</h2>
+    <a class="mail reveal" id="mail" href="#"></a>
+    <div class="links reveal" id="links"></div>
+  </section>
+</main>
+
+<footer class="foot mono dim">
+  <span id="foot-name"></span>
+  <span>Designed and built by Balamurugan.</span>
+</footer>
+
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Command menu" hidden>
+  <div class="palette-box">
+    <input id="palette-input" type="text" placeholder="Jump to… (type to filter)" autocomplete="off" aria-label="Search commands">
+    <ul id="palette-list" role="listbox"></ul>
+    <div class="palette-foot mono dim"><span>↑↓ navigate</span><span>↵ select</span><span>esc close</span></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
