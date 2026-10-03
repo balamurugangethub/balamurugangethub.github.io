@@ -9,6 +9,7 @@ window.PORTFOLIO = {
   timezone: "Asia/Kolkata",
   email: "bm20061027@gmail.com",       // TODO: confirm this is the email you want public
   resume: "resume.pdf",
+  age: "20",
   available: true,
   tagline: "Third-year CSE (Data Science – AI) student building data-driven apps and working towards a career in data engineering. Trained by IBM through my university curriculum.",
   about: [
@@ -55,7 +56,7 @@ window.PORTFOLIO = {
     "Languages (working knowledge)": ["Python", "Java", "C", "C++", "SQL"],
     "Building":     ["AI-assisted development", "Deployment", "VS Code"],
     "Data & IBM":   ["IBM Cloud", "Cognos Analytics", "Watson"],
-    "Design & Office": ["Canva", "Photoshop", "DaVinci Resolve", "Excel", "PowerPoint", "Word"],
+    "Design & Office": ["Canva", "Photoshop", "DaVinci Resolve", "Excel", "PowerPoint", "Word", "Figma"],
     "Spoken":       ["English (fluent)", "Tamil (native)", "Spanish (basic)"]
   }
 };
