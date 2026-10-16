@@ -28,6 +28,16 @@ window.PORTFOLIO = {
   ],
   projects: [
     {
+      title: "Retail Sales Data Platform",
+      summary: "End-to-end data pipeline on 1M+ retail sales rows: Airflow orchestration, dbt star-schema models with 51 tests, DuckDB/MotherDuck warehouse, automated data-quality checks with quarantine and alerts, and a Flask dashboard with a SQL workbench. Backed by 175+ automated tests.",
+      tags: ["Data Engineering", "App"],
+      stack: ["Python", "Airflow", "dbt", "DuckDB", "Flask", "Docker", "GitHub Actions"],
+      year: "2026",
+      live: "https://retail-sales-dashboard-sigma.vercel.app",
+      docs: "https://balamurugangethub.github.io/retail-sales-dashboard/",
+      code: "https://github.com/balamurugangethub/retail-sales-dashboard"
+    },
+    {
       title: "Sakhi Saathi",
       summary: "A voice-first, offline-capable web app that helps rural women access government services and welfare schemes in Hindi, Tamil, Telugu and English, with on-device privacy and 33 automated tests.",
       tags: ["App", "AI"],
@@ -55,6 +65,7 @@ window.PORTFOLIO = {
     "Strengths":     ["Algorithms", "Problem-solving", "Data Structures"],
     "Languages (working knowledge)": ["Python", "Java", "C", "C++", "SQL"],
     "Building":     ["AI-assisted development", "Deployment", "VS Code"],
+    "Data Engineering": ["Apache Airflow", "dbt", "DuckDB", "Star-schema modelling", "Data quality", "Docker", "GitHub Actions"],
     "Data & IBM":   ["IBM Cloud", "Cognos Analytics", "Watson"],
     "Design & Office": ["Canva", "Photoshop", "DaVinci Resolve", "Excel", "PowerPoint", "Word", "Figma"],
     "Spoken":       ["English (fluent)", "Tamil (native)", "Spanish (basic)"]

@@ -39,6 +39,7 @@
       <div class="card-links">
         ${p.live ? `<a href="${esc(p.live)}" target="_blank" rel="noopener">Live ↗</a>` : ""}
         ${p.code ? `<a href="${esc(p.code)}" target="_blank" rel="noopener">Code ↗</a>` : ""}
+        ${p.docs ? `<a href="${esc(p.docs)}" target="_blank" rel="noopener">Data catalog ↗</a>` : ""}
       </div>
     </article>`).join("");
 
