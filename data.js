@@ -39,9 +39,9 @@ window.PORTFOLIO = {
     },
     {
       title: "Sakhi Saathi",
-      summary: "A voice-first, offline-capable web app that helps rural women access government services and welfare schemes in Hindi, Tamil, Telugu and English, with on-device privacy and 33 automated tests.",
+      summary: "A voice-first, offline-capable PWA that helps first-time, non-English-speaking rural women use government services (LPG booking, Jan Dhan, welfare schemes) in 11 languages. Gemini-powered answers and speech, on-device privacy, a zero-dependency Node.js server on Cloud Run, CI and 33 automated tests.",
       tags: ["App", "AI"],
-      stack: ["JavaScript", "Node.js", "Gemini API", "PWA", "Cloud Run"],
+      stack: ["JavaScript", "Node.js", "Gemini API", "Web Speech API", "PWA", "Docker", "Cloud Run", "GitHub Actions"],
       year: "2026",
       live: "https://sakhi-saathi-567566086238.asia-south1.run.app",
       code: "https://github.com/balamurugangethub/-sakhi-saathi"
@@ -56,8 +56,21 @@ window.PORTFOLIO = {
     },
     {
       when: "2026",
+      title: "PromptWars × HackArena Hackathon",
+      org: "Finished 9th · Built Sakhi Saathi",
+      points: ["Built Sakhi Saathi for the challenge \"The Invisible Woman\": a voice-first app helping rural women access government services."]
+    },
+    {
+      when: "Jul – Aug 2026",
+      title: "Python for Data Science",
+      org: "NPTEL · IIT Madras (Swayam)",
+      points: ["4-week certified course with a proctored exam; 2 credits recommended."]
+    },
+    {
+      when: "Feb 2026",
       title: "Technical Support Fundamentals",
       org: "Google IT Support Professional Certificate · Coursera",
+      link: { label: "Verify certificate", url: "https://coursera.org/verify/970VT81DFUM8" },
       points: ["Completed the first of six courses in the certificate."]
     }
   ],
